@@ -1,0 +1,153 @@
+body {
+    /* background-color: #000; */
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/blue-grid-mosaic.jpg");
+    background-position: 50% 50%;
+    background-repeat: repeat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#logoCarmelo{
+  width: 30%;
+  float: left;
+  background: none;
+  border: none;
+}
+
+#titulo{
+  float: right;
+  color: #cbcbcb;
+  font-size: 44px;
+  font-style: oblique;
+}
+.botones{
+ color: #fff;
+ background-color: #060606;
+}
+.jumbotron {
+   background-color: #030303;
+   margin-top: 1em;
+   padding: 2em;
+   width: 100%;
+   height: 132px;
+}
+.nav-link{
+  color: white;
+}
+#estudiantesTitulo, #profesoresTitulo{
+  background-color: #997341;
+  height: 31px;
+  padding: 1%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#estudiantesLetra, #profesoresLetra{
+  color: white;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0.5%;
+    border: solid 1px #000000;
+    background-color: #f6f6a5;
+}
+
+.btn-menu-secundario {
+    width: 32%;
+    margin-left: 1%
+}
+
+#visorSecundario {
+    padding: 2em;
+    min-height: 20em;
+
+}
+.col-splash{
+    min-height: 40em;
+    padding-top: 22%;
+}
+
+.alert-estudiante, .alert-profe {
+    cursor: pointer;
+}
+
+.alert-estudiante:hover {
+    color: coral;
+    background-color: blanchedalmond;
+}
+
+.alert-profe:hover {
+    color: crimson;
+    background-color:darkcyan;
+}
+
+/*
+Preguntar cantidad de docentes. En caso de ser màs de 6 se debe implementar esa regla al elemento
+listaProfe
+*/
+
+#listaEstudiantes {
+    height: 24em;
+    overflow-y: scroll;
+}
+
+#divBtnSecundaria {
+    display: none;
+}
+
+.btn-activo {
+    background-color: bisque;
+    font-weight: bold;
+}
+
+.btn-inactivo {
+    background-color: transparent;
+    font-weight: normal;
+}
+
+
+
+/* Estilo scroll */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Fin del estilo scroll ------------------ */
+
+
+.col-info-cole {
+    min-height: 29em;
+    padding: 2em;
+    background-color: #f6f6a5;
+    border-radius: 15px;
+
+}
+
+.col-menu-photos {
+height: 28em;
+padding-top: 5em;
+}
+
+.menu-opt-camera {
+    cursor: pointer;
+}
