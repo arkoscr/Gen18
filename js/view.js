@@ -63,7 +63,7 @@ View.prototype.mainStudents = function (visor) {
             "<div class='col-sm-12' id='divBtnSecundaria'>" +
                     "<button type='button' id='btnIam' class='btn btn-outline-success btn-lg btn-menu-secundario'>Así soy</button>" +
                     "<button type='button' id='btnPictures' class='btn btn-outline-danger btn-lg btn-menu-secundario'>Fotos</button>" +
-                    "<button type='button' id='btnTestament' class='btn btn-outline-warning btn-lg btn-menu-secundario'>Testamento</button>" +
+                    "<button type='button' id='btnTestament' class='btn btn-outline-warning btn-lg btn-menu-secundario'>Legado</button>" +
             "</div>" +
         "</div>" +
         "<div  id='visorSecundario' class='row'>" +
