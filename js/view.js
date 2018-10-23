@@ -22,6 +22,9 @@ View.prototype.htmlTemplate = function (visor) {
                 "<li class='nav-item'>" +
                     "<a class='nav-link' id='pillsGrupo' data-toggle='pill' href='#' role='tab' aria-controls='pills-contact' aria-selected='false'>El grupo</a>" +
                 "</li>" +
+                "<li class='nav-item'>" +
+                    "<a class='nav-link' id='pillsEnlaces' data-toggle='pill' href='#' role='tab' aria-controls='pills-contact' aria-selected='false'>Descargas</a>" +
+                "</li>" +
             "</ul>" +
         "<div class='row' id='mainVisor'></div>"
     );
@@ -183,6 +186,14 @@ View.prototype.infoTeacer = function (item) {
     $("#visorSecundario").html(htmlCol);
     $("#nombreProfe").text(item.nombre + " " + item.apellido);
 }
+
+View.prototype.mainDescargas = function (visor) {
+    $(visor).empty();
+    var htmlCol1 = $("<div class='col-sm-8  col-info-cole'>" +
+    "<h2>Aquí podrás descargar más fotos!!!</h2>" +
+    "</div>");
+    $(visor).html(htmlCol1);
+};
 
 View.prototype.mainHighSchool = function (visor) {
     $(visor).empty();

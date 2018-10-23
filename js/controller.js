@@ -61,7 +61,11 @@ function loadApp (dataset) {
             });
 
             break;
+            case "pillsEnlaces":
+            console.log("Cole");
+            v.mainDescargas($("#mainVisor"));
 
+            break;
 
             default:
             console.log("Selecciòn fuera de rango");
