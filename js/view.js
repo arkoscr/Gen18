@@ -69,7 +69,7 @@ View.prototype.mainStudents = function (visor) {
         "<div  id='visorSecundario' class='row'>" +
             "<div class='col-sm-12'>" + "<center><h1>¡Somos la generación 2018!</h1></center>"+
                 "Cada estudiante representa una historia de esfuerzo, de sacrificio, de disciplina.  Cada estudiante a su vez representa la alegría de ver alcanzada una meta en la que han intervenido las voluntades de muchas personas para que el logro de obtener el bachillerato, tenga un significado único para cada uno." +"<br><br>"+
-          "De Clic al nombre de cada estudiante para que recuerde un poco de la hstoria que cada estudiante ha querido compartir, así como imágenes que mantentrán viva la presencia de cada uno de ellos en nuestras vidas..." + "</div>" +
+          "De Clic al nombre de cada estudiante para que recuerde un poco de la hstoria que cada estudiante ha querido compartir, así como imágenes que mantendrán viva la presencia de cada uno de ellos en nuestras vidas..." + "</div>" +
         "</div>" +
         "</div>");
         $(visor).html(htmlContent);
@@ -80,7 +80,7 @@ View.prototype.listStudents = function (array, visor) {
     var htmlContTmp = $("<div></div>");
 
     for (let index = 0; index < array.length; index++) {
-        let htmlAlert = $("<div id='"+ index +"' class='alert alert-success alert-estudiante' role='alert'> </div>");
+        let htmlAlert = $("<div id='"+ index +"' class='alert alert-success alert-estudiante lista-estudiantes' role='alert'> </div>");
         $(htmlAlert).append(array[index].nombre );
         // $(htmlAlert).append(" " + array[index].apellido );
         $(htmlContTmp).append(htmlAlert);
@@ -222,23 +222,23 @@ View.prototype.menuPhotos = function (visor) {
     $(visor).empty();
     var htmlString = $(
         "<div class='col-sm-4 text-center col-menu-photos'>" +
-            "<img class='menu-opt-camera' src='./img/camera.png'>" +
-            "<h4>  En clases... </h4>   "  +
+            "<img id='paseo' class='menu-opt-camera' src='./img/camera.png'>" +
+            "<h4>  Paseo... </h4>   "  +
         "</div>" +
-        "<div class='col-sm-4 text-center col-menu-photos'>" +
+        "<div id='retiro' class='col-sm-4 text-center col-menu-photos'>" +
             "<img class='menu-opt-camera' src='./img/camera.png'>" +
-            "<h4>  Expo Ciencias </h4>   "  +
+            "<h4>  Retiro </h4>   "  +
         "</div>" +
-        "<div class='col-sm-4 text-center col-menu-photos'>" +
+        "<div id='sesion' class='col-sm-4 text-center col-menu-photos'>" +
             "<img class='menu-opt-camera' src='./img/camera.png'>" +
-            "<h4>  Convivencias </h4>   "  +
+            "<h4>  Sesión </h4>   "  +
         "</div>"
     )
 
     $(visor).html(htmlString);
   }
 
- View.prototype.mainPhotos = function (visor) {
+ View.prototype.mainPhotos = function (visor, carpeta) {
      console.log("vista maingroup");
 
      $(visor).empty();
@@ -246,17 +246,17 @@ View.prototype.menuPhotos = function (visor) {
        " <div class='col-sm-12 container-gallery'>" +
         "<div class='row'>" +
             "<div class='col-sm-12 text-center col-main'>" +
-                "<img id='imgMainVisor' src='./images/pic1.jpg' alt='' class='img-fluid'>" +
+                "<img id='imgMainVisor' src='./"+carpeta+"/pic1.jpg' alt='' class='img-fluid'>" +
             "</div>" +
         "</div>" +
         "<div class='row'>" +
                     "<div class='col-sm-12 text-center col-thmb'>" +
-                        "<img class='img-thmb img-thmb-sel' src='./images/pic1.jpg' alt='pic 1'>" +
-                        "<img class='img-thmb' src='./images/pic2.jpg' alt='pic 2'>" +
-                        "<img class='img-thmb' src='./images/pic3.jpg' alt='pic 3'>" +
-                        "<img class='img-thmb' src='./images/pic4.jpg' alt='pic 4'>" +
-                        "<img class='img-thmb' src='./images/pic5.jpg' alt='pic 5'>" +
-                        "<img class='img-thmb' src='./images/pic6.jpg' alt='pic 6'>" +
+                        "<img class='img-thmb img-thmb-sel' src='./"+carpeta+"/pic1.jpg' alt='pic 1'>" +
+                        "<img class='img-thmb' src='./"+carpeta+"/pic2.jpg' alt='pic 2'>" +
+                        "<img class='img-thmb' src='./"+carpeta+"/pic3.jpg' alt='pic 3'>" +
+                        "<img class='img-thmb' src='./"+carpeta+"/pic4.jpg' alt='pic 4'>" +
+                        "<img class='img-thmb' src='./"+carpeta+"/pic5.jpg' alt='pic 5'>" +
+                        "<img class='img-thmb' src='./"+carpeta+"/pic6.jpg' alt='pic 6'>" +
                     "</div>" +
         "</div>" +
 "</div>" );

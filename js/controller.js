@@ -44,13 +44,21 @@ function loadApp (dataset) {
             case "pillsGrupo":
             console.log("Grupo");
             v.menuPhotos($("#mainVisor"));
-            $(".menu-opt-camera").click(function (e) {
+            $("#paseo").click(function (e) {
                 e.preventDefault();
-                v.mainPhotos("#mainVisor");
+                v.mainPhotos("#mainVisor", "paseo");
                 miniGallery();
             });
-
-
+            $("#retiro").click(function (e) {
+                e.preventDefault();
+                v.mainPhotos("#mainVisor", "retiro");
+                miniGallery();
+            });
+            $("#sesion").click(function (e) {
+                e.preventDefault();
+                v.mainPhotos("#mainVisor", "sesion");
+                miniGallery();
+            });
 
             break;
 
